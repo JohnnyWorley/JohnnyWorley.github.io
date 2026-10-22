@@ -1,0 +1,21 @@
+ html{
+
+     font-size: 22px;
+}
+
+body{
+
+     background-color: black;
+    color: cyan;
+}
+
+a{
+    color: red;
+}
+a:visited{
+    color: maroon;
+}
+
+a:hover, a:active{
+    color: rgb(163, 41, 41);
+}
