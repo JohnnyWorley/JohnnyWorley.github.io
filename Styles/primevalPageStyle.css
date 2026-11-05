@@ -1,0 +1,170 @@
+.header-text{
+  position: absolute;
+  font-family: "primevalFont";
+
+  
+  top: 10%;
+  left: 25%;
+  
+  font-size: 90px;
+  float: left;
+  z-index: 100;
+}
+
+.header-image{
+
+    width: 100%;
+    height: 50vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
+
+    background-image: url(/JohnnyWorley.github.io/Images/primevalWebImage.png);
+}
+
+.scroll-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.fade-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  animation-timeline: scroll(root);
+  animation-name: fadeOut;
+  animation-fill-mode: both;
+  animation-range: 0px 600px;
+}
+
+.fade-text{
+  animation-timeline: scroll(root);
+
+  animation-name: fadeOut;
+  animation-fill-mode: both;
+  
+  animation-range: 0px 300px;
+}
+.fade-in-text{
+    animation-timeline: scroll(root);
+    animation-name: fadeIn;
+    animation-fill-mode: both;
+    animation-range: 250px 500px;
+}
+
+.centered-body{
+   transform: translate(0%, -80%);
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+html{
+     font-size: 22px;
+}
+
+body{
+    background-color: rgb(29, 0, 0);
+    color: cyan;
+    min-height: 100vh;
+    margin:  auto;
+
+}
+
+
+table, tr, th, td, caption{
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+@font-face {
+    font-family: primevalFont;
+    src: url(/JohnnyWorley.github.io/Fonts/Penakut.otf);
+}
+
+p{
+    max-width: 120ch;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-left: 14.5%;
+    font-family: primevalFont;
+}
+
+h3{
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-left: 14.5%;
+    font-family: primevalFont;
+
+}
+
+canvas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    margin-left: 20%;
+}
+
+.column{
+    float: left;
+    width: 49%;
+    padding: 5px;
+}
+
+.row:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+video{
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}

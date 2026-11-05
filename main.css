@@ -5,17 +5,50 @@
 
 body{
 
-     background-color: black;
+     background-color: rgb(29, 0, 0);
     color: cyan;
+     min-height: 100vh;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 50%;
 }
 
 a{
-    color: red;
+    color: rgb(255, 0, 195);
 }
+
 a:visited{
-    color: maroon;
+    color: rgb(251, 93, 232);
 }
 
 a:hover, a:active{
-    color: rgb(163, 41, 41);
+    color: rgb(225, 10, 175);
+}
+
+h1{
+  font-size: 60px;
+  font-family: "primevalFont";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table, tr, th, td, caption{
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+@font-face {
+    font-family: primevalFont;
+    src: url(/JohnnyWorley.github.io/Fonts/Penakut.otf);
 }
